@@ -1,0 +1,65 @@
+.modal {
+  &-content {
+    background-color: $indigo;
+    border-radius: 10px;
+  }
+
+  &-header {
+    justify-content: center;
+    border-bottom: none;
+    padding: 20px;
+
+    .close {
+      display: block;
+      background: url('../../../static/icons/close.svg') no-repeat 50% 50%;
+      background-size: contain;
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      @include position(absolute, 10px 10px null null);
+      @include size(20px);
+
+      > span, > img {
+        display: none;
+      }
+    }
+
+    & + .modal-body {
+      padding-top: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 40px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  &-body {
+    padding: 20px;
+
+    & + .modal-footer {
+      padding-top: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 40px;
+    }
+  }
+
+  &-footer {
+    border-top: none;
+    padding: 20px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 40px;
+    }
+  }
+}

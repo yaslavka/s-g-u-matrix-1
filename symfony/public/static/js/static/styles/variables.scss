@@ -1,0 +1,30 @@
+// Grid
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+);
+$grid-gutter-width: 20px;
+
+// Colors
+$dark-indigo: #230b51;
+$indigo: #2a0072;
+$white: #ffffff;
+$violet-blue: #4b0fb2;
+$dark-violet: #230b51;
+$dark-violet-two: #11032c;
+$perrywinkle: #8083e6;
+$iris: #5d55cc;
+$soft-blue: #726ae2;
+$light-blue: #aaadf0;
+$heliotrope: #df56fb;
+$aqua-blue: #00c3e1;
+$orangey-red: #db2e21;
+$main-gradient: linear-gradient(
+  134.63deg,
+  $indigo 16.85%,
+  $violet-blue 47.48%,
+  $iris 67.86%,
+  $soft-blue 85.6%
+);

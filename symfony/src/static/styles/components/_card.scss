@@ -1,0 +1,52 @@
+$root: "card";
+
+.#{$root} {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #2a0072;
+  word-wrap: break-word;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  min-width: 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    & + .#{$root}__body {
+      padding-top: 0;
+    }
+
+    &-left {}
+
+    &-right {}
+  }
+
+  &__title {
+    margin-bottom: 0;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__body {
+    padding: 25px;
+
+    & + .#{$root}__footer {
+      padding-top: 0;
+    }
+  }
+
+  &__footer {
+    padding: 25px;
+  }
+
+  &__actions {
+    &--center {
+      text-align: center;
+    }
+  }
+}

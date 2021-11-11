@@ -1,0 +1,150 @@
+.authentication {
+  background-color: $dark-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transform: translateY(0);
+  animation: 1s ease-out animate-1;
+  position: relative;
+  z-index: unset;
+  opacity: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 99%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 0;
+    animation: 1s ease-out animate-2;
+  }
+
+  &--animate {
+    transform: translateY(350px);
+    z-index: 2;
+    animation: unset !important;
+    opacity: 0;
+
+    &:after {
+      min-height: 350px;
+      animation: unset !important;
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: unset;
+  }
+}
+
+@keyframes animate-1 {
+  0% {
+    transform: translateY(350px);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  10% {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  50% {
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  99% {
+    z-index: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    z-index: unset;
+  }
+}
+
+@keyframes animate-2 {
+  0% {
+    min-height: 350px;
+  }
+
+  50% {
+    min-height: 350px;
+  }
+
+  100% {
+    min-height: 0;
+  }
+}
+
+@keyframes animate-3 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.authentication__container {
+  @include container;
+}
+
+.authentication__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  justify-content: space-between;
+  opacity: 1;
+  transform: translateY(0);
+  animation: 1s ease-out animate-3;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 550px) {
+    margin: 0 -20px;
+    justify-content: center;
+  }
+
+  @at-root .authentication--animate #{&} {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: unset !important;
+  }
+}
+
+.authentication__btn-wrap {
+  @media (max-width: 550px) {
+    align-self: stretch;
+    background-color: $dark-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:last-of-type {
+      margin-top: 20px;
+    }
+  }
+}
+
+.authentication__btn {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @media (max-width: 550px) {
+    margin: 10px 10px;
+  }
+}

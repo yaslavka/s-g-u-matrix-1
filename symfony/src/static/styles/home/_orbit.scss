@@ -1,0 +1,351 @@
+.orbit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.orbit__box {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.orbit__first {
+  top: -200px;
+  right: -200px;
+  width: 1068px;
+  height: 1068px;
+  animation: 120s linear 0s normal none infinite running spinning-1;
+  background: url("../../images/home/orbit.svg") no-repeat (center / 100%) 100%;
+
+  @media (max-width: 1340px) {
+    top: -80px;
+    right: -59px;
+    width: 800px;
+    height: 800px;
+  }
+
+  @media (max-width: 768px) {
+    top: 10px;
+    right: 1px;
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 550px) {
+    top: -71px;
+    right: -138px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.orbit__second {
+  top: -588px;
+  right: -592px;
+  width: 1862px;
+  height: 1862px;
+  animation: 110s linear 0s normal none infinite running spinning-2;
+  background: url("../../images/home/orbit-big.svg") no-repeat (center / 99%) 99%;
+
+  @media (max-width: 1340px) {
+    top: -280px;
+    right: -238px;
+    width: 1200px;
+    height: 1200px;
+  }
+
+  @media (max-width: 768px) {
+    top: -90px;
+    right: -91px;
+    width: 600px;
+    height: 600px;
+  }
+
+  @media (max-width: 550px) {
+    top: -107px;
+    right: -165px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@keyframes spinning-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spinning-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit__small-star {
+  position: absolute;
+
+  &--1 {
+    top: 20px;
+    right: 754px;
+
+    .orbit__small-star-blur {
+      animation: 1.9s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 20px;
+      right: 608px;
+    }
+
+    @media (max-width: 768px) {
+      top: -9px;
+      right: 411px;
+    }
+
+    @media (max-width: 550px) {
+      top: 196px;
+      right: 311px;
+    }
+  }
+
+  &--2 {
+    top: 746px;
+    right: 579px;
+
+    .orbit__small-star-blur {
+      animation: 3s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 579px;
+      right: 572px;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      top: 340px;
+      right: 449px;
+    }
+
+    @media (max-width: 550px) {
+      top: 26px;
+      right: 229px;
+    }
+  }
+
+  &--3 {
+    top: 467px;
+    right: 1212px;
+
+    .orbit__small-star-blur {
+      animation: 2s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 437px;
+      right: 902px;
+    }
+
+    @media (max-width: 768px) {
+      top: 464px;
+      right: 72px;
+      z-index: 1;
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  &--4 {
+    top: 1184px;
+    right: 20px;
+
+    .orbit__small-star-blur {
+      animation: 2.5s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 793px;
+      right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      top: 33px;
+      right: 61px;
+    }
+
+    @media (max-width: 550px) {
+      top: 313px;
+      right: 21px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 35px;
+    height: 37px;
+  }
+
+  @media (max-width: 550px) {
+    width: 25px;
+    height: 27px;
+  }
+}
+
+@keyframes stars-animation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.orbit__big-star {
+  position: absolute;
+
+  &--1 {
+    top: 250px;
+    right: 821px;
+
+    .orbit__big-star-blur {
+      animation: 2.9s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 210px;
+      right: 691px;
+    }
+
+    @media (max-width: 768px) {
+      top: 131px;
+      right: 475px;
+      z-index: -1;
+    }
+
+    @media (max-width: 550px) {
+      top: 91px;
+      right: 243px;
+      z-index: auto;
+    }
+  }
+
+  &--2 {
+    top: 739px;
+    right: 8px;
+
+    .orbit__big-star-blur {
+      animation: 4s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 534px;
+      right: -12px;
+    }
+
+    @media (max-width: 768px) {
+      top: 274px;
+      right: -3px;
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  &--3 {
+    top: 17px;
+    right: 1176px;
+
+    .orbit__big-star-blur {
+      animation: 2s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 868px;
+      right: 408px;
+    }
+
+    @media (max-width: 768px) {
+      top: 279px;
+      right: 347px;
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  &--4 {
+    top: 693px;
+    right: 1128px;
+    z-index: 1;
+
+    .orbit__big-star-blur {
+      animation: 3.5s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 693px;
+      right: 748px;
+    }
+
+    @media (max-width: 768px) {
+      top: 27px;
+      right: 298px;
+    }
+
+    @media (max-width: 550px) {
+      top: -1px;
+      right: 382px;
+    }
+  }
+
+  &--5 {
+    top: 1094px;
+    right: 768px;
+
+    .orbit__big-star-blur {
+      animation: 3s ease-in-out 0s normal none infinite running stars-animation;
+    }
+
+    @media (max-width: 1340px) {
+      top: 34px;
+      right: 861px;
+    }
+
+    @media (max-width: 768px) {
+      top: 458px;
+      right: 285px;
+      z-index: 1;
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 55px;
+    height: 57px;
+  }
+
+  @media (max-width: 550px) {
+    width: 35px;
+    height: 37px;
+  }
+}

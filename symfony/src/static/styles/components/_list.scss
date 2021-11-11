@@ -1,0 +1,46 @@
+.list-info {
+  &--horizontal {
+    .list-info__group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &--lg-space {
+    @include media-breakpoint-up(md) {
+      .list-info__group + .list-info__group {
+        margin-top: 23px;
+      }
+    }
+  }
+
+  &__group {
+    & + .list-info__group {
+      margin-top: 10px;
+    }
+  }
+
+  &__label {}
+
+  &__value {
+    font-size: 1.2rem;
+
+    a {
+      text-decoration: underline;
+      color: #fff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .star-rating {
+      margin: 0;
+
+      li + li {
+        margin-left: 0;
+      }
+    }
+  }
+}

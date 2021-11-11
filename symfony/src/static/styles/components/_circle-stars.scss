@@ -1,0 +1,186 @@
+$size-small-circle-container: 355px;
+$size-circle-container: 575px;
+
+$radius-small-circle-one-em: 8px;
+$radius-circle-one-em: 15px;
+
+$height-small-circle: 100px;
+$width-small-circle: 90px;
+$height-circle: 142px;
+$width-circle: 130px;
+
+$star-small-size: 90px;
+$star-size: 130px;
+
+.circle {
+  &-stars {
+    &__container {
+      position: relative;
+      text-align: center;
+      margin: 0 auto 60px;
+
+      @include size($size-small-circle-container, $size-small-circle-container);
+
+      @include media-breakpoint-up(sm) {
+        @include size($size-circle-container, $size-circle-container);
+      }
+    }
+  }
+
+  &__container {
+    font-size: $radius-small-circle-one-em;
+
+    @include position(absolute, calc(#{$size-small-circle-container} / 2) 0 null calc(#{$size-small-circle-container} / 2));
+
+    @include media-breakpoint-up(sm) {
+      font-size: $radius-circle-one-em;
+
+      @include position(absolute, calc(#{$size-circle-container} / 2) 0 null calc(#{$size-circle-container} / 2));
+    }
+  }
+
+  &__center {
+    position: relative;
+    float: left;
+
+    &-content {
+      transform: translate(-50%, -50%);
+
+      @include position(absolute, 50% null null 50%);
+
+      img {
+        display: block;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 120px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &__point {
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: calc(-#{$height-small-circle} / 2) 0 0 calc(-#{$width-small-circle} / 2);
+    color: #fff;
+
+    @include size($width-small-circle, $height-small-circle);
+
+    @include media-breakpoint-up(sm) {
+      margin: calc(-#{$height-circle} / 2) 0 0 calc(-#{$width-circle} / 2);
+
+      @include size($width-circle, $height-circle);
+    }
+
+
+    &:hover {
+      color: #fff;
+
+      .circle__point-count {
+        background-color: #00c3e1;
+      }
+
+      .circle__point-clones {
+        background-color: #00c3e1;
+      }
+
+
+      .circle__star {
+        color: #00c3e1;
+      }
+    }
+
+    &--active {
+      .circle__point-count {
+        background-color: #00c3e1;
+      }
+
+      .circle__point-clones {
+        background-color: #00c3e1;
+      }
+
+      .circle__star {
+        color: #00c3e1;
+      }
+    }
+
+    &-count,
+    &-clones {
+      transition: background-color 0.3s ease-in;
+      background-color: #8083e6;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      min-width: 20px;
+      padding: 0 5px;
+
+      @include position(absolute, 13px 11px null null);
+      @include size(auto, 20px);
+
+      @include media-breakpoint-up(sm) {
+        border-radius: 15px;
+        line-height: 30px;
+        min-width: 30px;
+        font-size: 16px;
+
+        @include position(absolute, 20px 17px null null);
+        @include size(auto, 30px);
+      }
+    }
+
+    &-clones {
+      @include position(absolute, 13px auto null 5px);
+
+      @include media-breakpoint-up(sm) {
+        @include position(absolute, 20px auto null 10px);
+      }
+    }
+
+    &-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 10px;
+      line-height: 38px;
+      font-weight: 800;
+      font-size: 32px;
+
+      @include position(absolute, 0 0 0 0);
+
+      @include media-breakpoint-up(sm) {
+        line-height: 54px;
+        font-size: 48px;
+      }
+    }
+  }
+
+  &__star {
+    transition: color 0.3s ease-in;
+    line-height: $star-small-size;
+    font-size: $star-small-size;
+    color: #8083e6;
+
+    @include media-breakpoint-up(sm) {
+      line-height: $star-size;
+      font-size: $star-size;
+    }
+
+
+    svg {
+      display: inline-block;
+      stroke: currentColor;
+      fill: currentColor;
+      stroke-width: 0;
+
+      @include size(1em);
+    }
+  }
+}

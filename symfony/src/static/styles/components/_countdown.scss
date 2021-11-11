@@ -1,0 +1,94 @@
+$star-sm-size: 85px;
+$star-lg-size: 120px;
+$star-size: 190px;
+
+.start-countdown {
+  display: flex;
+  justify-content: space-around;
+
+  &__block {
+    position: relative;
+    text-align: center;
+  }
+
+  &__start {
+    display: flex;
+    position: relative;
+    font-size: $star-sm-size;
+    color: #4b0fb2;
+
+    @include size($star-sm-size);
+
+    &:before {
+      content: '\2605';
+      font-size: calc(#{$star-sm-size} + 10px);
+      line-height: calc(#{$star-sm-size} + 10px);
+      text-shadow: 0px 0px 20px rgba(#00c3e1, 1);
+      color: transparent;
+
+      @include position(absolute, -5px null null -5px);
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: $star-lg-size;
+
+      @include size($star-lg-size);
+
+      &:before {
+        font-size: calc(#{$star-lg-size} + 10px);
+        line-height: calc(#{$star-lg-size} + 10px);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: $star-size;
+
+      @include size($star-size);
+
+      &:before {
+        font-size: calc(#{$star-size} + 10px);
+        line-height: calc(#{$star-size} + 10px);
+      }
+    }
+
+
+    svg {
+      position: relative;
+      display: inline-block;
+      stroke: currentColor;
+      fill: currentColor;
+      stroke-width: 0;
+
+      @include size(1em);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+
+    @include position(absolute, 0 0 0 0);
+    @include size(100%);
+
+    @include media-breakpoint-up(lg) {
+      line-height: 24px;
+      font-size: 20px;
+    }
+  }
+
+  &__count {
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 20px;
+
+    @include media-breakpoint-up(lg) {
+      line-height: 38px;
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../static/styles/variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 11px;
+  color: $white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid transparent;
+
+  // Sizes
+
+  &.medium {
+    min-height: 44px;
+    font-size: 0.75rem;
+    border-radius: 30px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.medium {
+      min-height: 56px;
+    }
+
+    &.small {
+      min-height: 39px;
+    }
+  }
+
+  //Colors
+  &.perrywinkle {
+    background-color: $perrywinkle;
+    border-color: $perrywinkle;
+  }
+
+  &.violet-blue {
+    background-color: $dark-violet;
+    border-color: #fff;
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border: 1px solid $white;
+  }
+}

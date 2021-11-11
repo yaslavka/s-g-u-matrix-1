@@ -1,0 +1,11 @@
+.icons {
+  display: inline-block;
+  vertical-align: middle;
+  stroke: currentColor;
+  margin-top: -0.2em;
+  fill: currentColor;
+
+  @include size(1em);
+
+  stroke-width: 0;
+}

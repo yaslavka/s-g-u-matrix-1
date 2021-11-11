@@ -1,0 +1,152 @@
+.our-advantages {
+  @include container;
+
+  margin-bottom: 150px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 65px;
+  }
+}
+
+.our-advantages__title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media (max-width: 1240px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 25px;
+  }
+}
+
+.our-advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: unset;
+}
+
+.our-advantages__item {
+  position: relative;
+  width: 100%;
+  max-width: 485px;
+  margin: 0 30px 48px;
+  padding-left: 45px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../images/home/rhombus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    max-width: calc(50% - 90px);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 35px;
+
+    &:before {
+      width: 20px;
+      height: 20px;
+      top: 3px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: unset;
+    margin: 0 auto 25px;
+    max-width: 320px;
+  }
+}
+
+.our-advantages__item-title {
+  position: relative;
+  color: $thrush-egg-color;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 12px;
+
+  &:before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../../images/home/rhombus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 425px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 425px) {
+    display: inline-block;
+  }
+}
+
+.our-advantages__item-text {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+
+  @media (max-width: 1240px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 425px) {
+    text-align: center;
+    line-height: 1.4;
+  }
+}

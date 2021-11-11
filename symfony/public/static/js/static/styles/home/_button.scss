@@ -1,0 +1,57 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 35px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 35px;
+  color: inherit;
+  text-decoration: unset;
+  transition: 0.3s;
+  font-weight: 700;
+  outline: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+
+  &--violet {
+    background-color: $second-color;
+    border-color: $second-color;
+
+    &:hover {
+      color: #fff;
+      border-color: $second-color;
+    }
+  }
+
+  &--svg-evlipses {
+    padding-right: 100px;
+    margin-right: 18px !important;
+
+    @media (max-width: 550px) {
+      padding-right: 65px;
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+  }
+}
+
+.button__svg-eclipses {
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+
+  @media (max-width: 550px) {
+    width: 68px;
+    right: -13px;
+  }
+}

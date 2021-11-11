@@ -1,0 +1,55 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+
+  &--rtl {
+    flex-direction: row-reverse;
+  }
+
+  &--two-triangle li {
+    position: relative;
+
+    &:nth-child(1) {
+      top: -20px;
+      order: 2;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      top: -20px;
+      right: -15px;
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      left: 15px;
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      left: 15px;
+      order: 6;
+    }
+  }
+
+  li {
+    + li {
+      margin-left: 6px;
+    }
+
+    &.interactive {
+      cursor: pointer;
+    }
+  }
+}

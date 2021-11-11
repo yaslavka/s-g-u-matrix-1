@@ -1,0 +1,52 @@
+.legal-information {
+  @include container;
+
+  max-width: 955px;
+  margin: 0 auto 160px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 85px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.1;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 90px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+  }
+
+  &__wrap {
+    text-align: center;
+
+    p {
+      line-height: 26px;
+      font-size: 22px;
+    }
+
+    @media (min-width: 767px) {
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    @media (min-width: 767px) {
+      padding-right: 60px;
+      margin-bottom: 0;
+      flex: 0 0 500px;
+    }
+  }
+}

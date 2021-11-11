@@ -1,0 +1,30 @@
+var map = {
+	"./planet-1.png": 253,
+	"./planet-2.png": 254,
+	"./planet-3.png": 255,
+	"./planet-4.png": 256,
+	"./planet-5.png": 257,
+	"./planet-6.png": 258,
+	"./planet-7.png": 259,
+	"./planet-8.png": 260
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 616;

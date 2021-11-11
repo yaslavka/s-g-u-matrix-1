@@ -1,0 +1,199 @@
+#root:
+#  path: /
+#  controller: App\Controller\QuestionController::root
+
+#signUp:
+#  path: /
+#  controller: App\Controller\QuestionController::Sign_up
+
+#signIn:
+#  path: /
+#  controller: App\Controller\QuestionController::Sign_in
+
+#resetPassword:
+#  path: /
+#  controller: App\Controller\QuestionController::reset-password
+
+#leader:
+#  path: /
+#  controller: App\Controller\QuestionController::leader
+
+#dashboard:
+#  path: /
+#  controller: App\Controller\QuestionController::dashboard
+
+#news:
+#  path: /
+#  controller: App\Controller\QuestionController::news
+
+#aboutUs:
+#  path: /
+#  controller: App\Controller\QuestionController::about-us
+
+#tables:
+#  path: /
+#  controller: App\Controller\QuestionController::tables
+
+#personalTable:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/1
+
+#personalTable2:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/2
+
+#personalTable3:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/3
+
+#personalTable4:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/4
+
+#personalTable5:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/5
+
+#personalTable6:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/6
+
+#personalTable7:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/7
+
+#personalTable8:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-table/8
+
+#premiumStars:
+#  path: /
+#  controller: App\Controller\QuestionController::premium-stars
+
+#personalPremiumTable:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-premium-table/1
+
+#personalPremiumTable2:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-premium-table/2
+
+#personalPremiumTable3:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-premium-table/3
+
+#personalPremiumTable4:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-premium-table/4
+
+#personalPremiumTable5:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-premium-table/5
+
+#superStars:
+#  path: /
+#  controller: App\Controller\QuestionController::super-stars
+
+#personalSSTable:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/1
+
+#personalSSTable2:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/2
+
+#personalSSTable3:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/3
+
+#personalSSTable4:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/4
+
+#personalSSTable5:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/5
+
+#personalSSTable6:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/6
+
+#personalSSTable7:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/7
+
+#personalSSTable8:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/8
+
+#personalSSTable9:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/9
+
+#personalSSTable10:
+#  path: /
+#  controller: App\Controller\QuestionController::personal-super-star-table/10
+
+#exchange:
+#  path: /
+#  controller: App\Controller\QuestionController::/exchange
+
+#casinoEnded:
+#  path: /
+#  controller: App\Controller\QuestionController::/casino/ended
+
+#starTrek:
+#  path: /
+#  controller: App\Controller\QuestionController::startrek
+
+#starTrekPlanets:
+#  path: /
+#  controller: App\Controller\QuestionController::/startrec/planets
+
+#starTrekStatistic:
+#  path: /
+#  controller: App\Controller\QuestionController::/startrec/statistic
+
+#starTrekFirstLinePlanets:
+#  path: /
+#  controller: App\Controller\QuestionController::/startrec/first-line-planets
+
+#starsUp:
+#  path: /
+#  controller: App\Controller\QuestionController::/starsup
+
+#starsUpTable:
+#  path: /
+#  controller: App\Controller\QuestionController::/starsup/table
+
+#starsUpPersonTable:
+#  path: /
+#  controller: App\Controller\QuestionController::/starsup/person/1
+
+#finances:
+#  path: /
+#  controller: App\Controller\QuestionController::/finances
+
+#team:
+#  path: /
+#  controller: App\Controller\QuestionController::/team
+
+#education:
+#  path: /
+#  controller: App\Controller\QuestionController::/education
+
+#educationForm:
+#  path: /
+#  controller: App\Controller\QuestionController::/educations/send-request
+
+#settings:
+#  path: /
+#  controller: App\Controller\QuestionController::/settings
+
+
+
+
+
+
+
+

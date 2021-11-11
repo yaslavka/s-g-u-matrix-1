@@ -1,0 +1,33 @@
+.referral-link {
+  display: flex;
+  align-items: center;
+
+  &__url {
+    font-weight: 500;
+    cursor: default;
+    flex: 1;
+  }
+
+  &__btn {
+    color: #fff;
+  }
+}
+
+.form-control {
+  &-label {
+    margin-bottom: 0;
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
+
+select.form-control,
+select.form-control:focus {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding-left: 0;
+  color: #fff;
+}
